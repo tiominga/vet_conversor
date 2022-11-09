@@ -1,0 +1,150 @@
+
+
+main{
+
+     height:100%;   
+     display:grid;
+     grid-template-rows: 0.5fr 0.2fr 6fr 2fr ;
+     grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+     grid-template-areas:      
+     "tools tools tools tools tools"
+     "cab cab2 cab3 cab4 cab5"
+     "v_tabelas v_campos i_tabelas i_campos relacionamentos"
+     "query query query query query";
+  
+}
+
+font{
+
+    font-family: Verdana,Arial;
+    color:blue;
+    font-size:1.0vw;
+
+
+}
+
+.tools{
+
+    grid-area: tools;
+    background: silver;
+    display:flex;   
+    justify-content: space-around;
+    position:relative;
+    
+
+
+
+}
+
+.i_tabelas {
+
+    
+    grid-area: i_tabelas;
+    background: lightsteelblue;
+    display:block;           
+    position:relative;
+    overflow:auto;
+   
+}
+
+.i_campos {
+
+    grid-area: i_campos;
+    background: lightgrey;
+    display:block;           
+    position:relative;
+    overflow:auto;
+   
+   
+}
+
+.v_tabelas {
+
+    grid-area: v_tabelas;
+    background: lightsteelblue;
+    display:block;           
+    position:relative;
+    overflow:auto;
+   
+}
+
+.v_campos {
+
+    grid-area: v_campos;
+    background: lightgrey;
+    display:block;           
+    position:relative;
+    overflow:auto;
+   
+}
+
+.relacionamentos {
+
+    grid-area: relacionamentos;
+    background: lightseagreen;
+    display:block;   
+    position:relative;
+    overflow:auto;
+   
+}
+
+.query {
+
+    grid-area: query;
+    background: lightcyan;
+    display:block;   
+    position:relative;
+    overflow:auto;
+   
+}
+
+.sql {
+
+    grid-area: sql;
+    background: gray;
+    display:block;   
+    position:absolute;
+    overflow:auto;
+   
+}
+
+
+.menu:hover {
+    font-size:1.1vw;
+    text-decoration:underline;
+}
+
+
+.menu:active {
+    font-size:1vw;
+    text-decoration:underline;
+}
+
+
+
+.menu
+{
+
+    display:inline-block;
+    cursor:pointer;    
+    font-size:1.0vw;
+    
+    text-decoration:none;
+    font-family: Verdana,Arial;
+    color:blue;
+}
+
+.achado
+{
+
+    display:inline-block;
+    cursor:pointer;    
+    font-size:1.1vw;
+    
+    text-decoration:underline;
+    font-family: Ubuntu,arial;
+    color:red;
+}
+
+
+

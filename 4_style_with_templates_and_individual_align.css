@@ -1,0 +1,37 @@
+
+
+main{
+
+     height:100%;   
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas: 
+     "box1 ."
+     "box2 box3";
+     
+     
+}
+
+.box1 {
+
+    grid-area: box1;
+    background: lightcoral;
+    justify-self:center; 
+   
+}
+
+.box2 {
+
+    grid-area: box2;
+    background: lightblue;
+    justify-self:left; 
+}
+
+.box3 {
+
+    grid-area: box3;
+    background: lightgreen;
+    justify-self:right; 
+    
+}
